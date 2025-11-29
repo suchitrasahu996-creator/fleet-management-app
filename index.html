@@ -56,8 +56,15 @@
             event.preventdeafault();
 
             const email= document.getElementById("email").value;
-            
-        }
+            if(email ===valid_email && password=== valid_password){
+                alert("Login Sucess");
+                window.location.href="admin.html";
+
+            }else{
+                alert("wrong email or pasword");
+            }
+
+        })
 
     </script>
     
