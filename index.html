@@ -30,7 +30,7 @@
         h1{
             margin:4% 40%;
             display:flex;
-            
+
 
         }
     </style>
@@ -42,15 +42,24 @@
      <form action="">
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
-        <label>password:</label>
+        <label>password:</label> 
+         <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="login" id="login">
 
      </form>
      </div>
-     <Script>
-        const valid_email=
-     </Script>
-    
-    <button>login</button>
+     <script>
+        const valid_email="admin@gmail.com"
+        const valid_password="admin1234"
+        const form = document.querySelector("form");
+        form.addEventlistener("submit",Function(event){
+            event.preventdeafault();
 
+            const email= document.getElementById("email").value;
+            
+        }
+
+    </script>
+    
 </body>
 </html>
